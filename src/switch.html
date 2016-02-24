@@ -1,0 +1,9 @@
+<template>
+  <require from="/styles/switch.css"></require>
+  <div class='switch' click.trigger="toggle()">
+    <div class='switch__off' class.bind="enabled ? 'switch__off--hide' : ''">OFF</div>
+    <div class='switch__glow' class.bind="enabled ? '' : 'switch__glow--hide'"></div>
+    <div class='switch__button' class.bind="enabled ? 'switch__button--hide' : ''"></div>
+    <div class='switch__on' class.bind="enabled ? '' : 'switch__on--hide'">ON</div>
+  </div>
+</template>

@@ -1,0 +1,68 @@
+.switch {
+  position: relative;
+  width: 60px;
+  background-color: rgb(25, 25, 25);
+  margin: 1em;
+  border-radius: 30px;
+  height: 30px;
+  font-family: helvetica;
+  border: 2px solid #131313;
+  font-size: 14px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.switch .switch__off {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  color: #6E6E6E;
+}
+
+.switch .switch__off.switch__off--hide {
+  display: none;
+}
+
+.switch .switch__on {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  color: #F8F8F8;
+}
+
+.switch .switch__on.switch__on--hide {
+  display: none;
+}
+
+.switch .switch__button {
+  width: 25px;
+  height: 89%;
+  background-color: #6E6E6E;
+  position: absolute;
+  left: 0.7px;
+  z-index: 1;
+  border-radius: 25px;
+  top: 1.5px;
+  opacity: 1;
+  transition: left .2s ease-in;
+}
+
+.switch .switch__button.switch__button--hide {
+  left: 34px;
+}
+
+.switch .switch__glow {
+  width: 93%;
+  height: 93%;
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  border-radius: 30px;
+  background-color: #70B3CF;
+  opacity: 1;
+  transition: opacity .3s ease-in;
+}
+
+.switch .switch__glow.switch__glow--hide {
+  opacity: 0;
+}
